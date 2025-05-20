@@ -1,34 +1,28 @@
 📘 Chapter 3 Quick Win: Choose Your Cloud Role with the 3-Box Method
-This activity helps aspiring cloud professionals quickly identify the best-fit cloud career path by aligning three key areas:
+This quick win helps you stop guessing and start focusing by discovering which cloud role is the best fit for you—based on your skills, interests, and market demand.
 
-What you're good at
+You’ll use a simple 3-box method to map:
 
-What you enjoy doing
+✅ What you’re good at
 
-What the cloud job market needs
+✅ What you enjoy doing
 
-📥 How to Use This Quick Win
-Download the activity sheet PDF included in this folder:
-👉 ch3_activity_sheet_3_box_cloud_role_finder.pdf
+✅ What the cloud market actually needs
 
-Follow the guided prompts to:
+By the end of the activity, you’ll have clarity on your “cloud flavor”—whether it’s DevOps, Cloud Support, SRE, Security, or something else—and a 30-day sprint goal to guide your next steps.
 
-List your skills and interests
+🧾 What’s Inside
+A structured decision-making activity using 3 boxes
 
-Research in-demand roles
+A self-assessment worksheet to discover your role match
 
-Identify your cloud career “flavor”
+A role research prompt to identify tools and sample projects
 
-Commit to a 30-day sprint
+A LinkedIn declaration bonus task to build accountability and momentum
 
-Optional: Share your chosen role on LinkedIn using the hashtag
-#CloudWithoutTheJob to build visibility and connect with others on the same path.
+📥 How to Get Started
+👉 Download the activity sheet in this folder:
+Ch3 Activity Sheet - 3 Box Cloud Role Finder.pdf
 
-✅ By the End of This Quick Win, You’ll Have:
-Clarity on your ideal cloud role
-
-Direction on what tools and services to focus on
-
-A learning plan to guide your next 30 days
-
-Momentum to start simulating projects that match your goal
+Fill it out to discover your aligned cloud path—and commit to a focused 30-day learning sprint.
+Optional: Share your decision online to build visibility and invite support using #30DayCloudSprint or #CloudWithoutTheJob.
