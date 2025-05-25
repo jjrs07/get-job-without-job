@@ -2,7 +2,7 @@
 
 **Master Cloud. Get Hired. No Experience Required.**
 
-This repository contains companion materials for the eBook **"How to Get the Job Without the Job"**, designed to help entry-level and mid-level IT professionals build cloud skills and gain job-ready experience—without needing prior work history.
+This repository contains companion materials for the eBook **"How to Get the Job Without the Job"**, designed to help entry-level and mid-level IT professionals and career shifters as well build cloud skills and gain job-ready experience—without needing prior work history.
 
 ---
 
