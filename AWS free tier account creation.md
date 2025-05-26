@@ -108,13 +108,13 @@ Now that you have your AWS Free Tier account:
 
 ---
 
-## 🔐 Security Tip
+## Security Tip
 
 After setup, enable **MFA (Multi-Factor Authentication)** for your root user:
 [Set up MFA](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_mfa_enable_virtual.html)
 
 ---
 
-## ✉️ Questions?
+## Questions?
 
 Open an issue in this repo or reach out to me on [LinkedIn](https://www.linkedin.com/in/james-santos-18697713/) or to my [Master Cloud Training FB Page](https://www.facebook.com/profile.php?id=100069262545216)
