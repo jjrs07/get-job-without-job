@@ -1,4 +1,4 @@
-# 🌐 Deploy a Static Website on AWS S3 (Free Tier Friendly)
+# Deploy a Static Website on AWS S3 (Free Tier Friendly)
 
 This guide walks you through hosting a static HTML/CSS website using **Amazon S3**, using only the AWS Free Tier.
 
@@ -46,6 +46,7 @@ Log in using your **root user** or **IAM user** credentials (recommended).
         <p>This is my first project deployed using AWS S3.</p>
       </body>
     </html>
+    ```
 
 3. Save the file as **index.html**
 
@@ -92,3 +93,12 @@ Log in using your **root user** or **IAM user** credentials (recommended).
     }
   ]
 }
+```
+---
+### Test Your Website
+
+1. Go back to Static Website section.
+2. Copy the Website endpoint URL
+3. Paste it in your favorite browser
+
+[Sample Web Site](images/sample_web.png)
