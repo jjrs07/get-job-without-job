@@ -1,10 +1,10 @@
-# 🌩️ How to Create an AWS Free Tier Account (Step-by-Step Guide)
+# How to Create an AWS Free Tier Account (Step-by-Step Guide)
 
 This guide walks you through creating an AWS Free Tier account—perfect for beginners starting their cloud journey.
 
 ---
 
-## 🚀 Prerequisites
+## Prerequisites
 
 Before you begin, make sure you have:
 
@@ -15,7 +15,7 @@ Before you begin, make sure you have:
 
 ---
 
-## 🛠️ Step-by-Step Instructions
+## Step-by-Step Instructions
 
 ### Step 1: Go to the AWS Free Tier Page
 
@@ -78,7 +78,7 @@ Select the **Basic Support Plan (Free)** and click **Complete Sign Up**.
 
 ---
 
-## 🧠 Tips for Staying Within the Free Tier
+## Tips for Staying Within the Free Tier
 
 - Monitor usage with [AWS Billing Dashboard](https://console.aws.amazon.com/billing/home)
 - Use the **Free Tier filter** when launching services
@@ -86,7 +86,7 @@ Select the **Basic Support Plan (Free)** and click **Complete Sign Up**.
 
 ---
 
-## 📦 Recommended Services Under Free Tier
+## Recommended Services Under Free Tier
 
 | Service         | Free Tier Limit                           |
 |----------------|--------------------------------------------|
@@ -98,13 +98,13 @@ Select the **Basic Support Plan (Free)** and click **Complete Sign Up**.
 
 ---
 
-## 🎯 What’s Next?
+## What’s Next?
 
 Now that you have your AWS Free Tier account:
 
-- ✅ Start a hands-on project (e.g., deploy a static website on S3)
-- 🎓 Try AWS labs or tutorials
-- 💡 Explore IAM, EC2, RDS, and S3 as your foundation
+- Start a hands-on project (e.g., deploy a static website on S3)
+- Try AWS labs or tutorials
+- Explore IAM, EC2, RDS, and S3 as your foundation
 
 ---
 
