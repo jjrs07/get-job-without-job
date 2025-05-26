@@ -101,4 +101,5 @@ Log in using your **root user** or **IAM user** credentials (recommended).
 2. Copy the Website endpoint URL
 3. Paste it in your favorite browser
 
-[Sample Web Site](images/sample_web.png)
+
+![Sample Web Site](images/sample_web.png)
