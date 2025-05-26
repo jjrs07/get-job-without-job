@@ -95,11 +95,16 @@ Log in using your **root user** or **IAM user** credentials (recommended).
 }
 ```
 ---
-### Test Your Website
+### Step 7: Test Your Website
 
 1. Go back to Static Website section.
 2. Copy the Website endpoint URL
 3. Paste it in your favorite browser
+
+---
+
+NOTE: You should get a similar output to the screenshot below
+
 
 
 ![Sample Web Site](images/sample_web.png)
