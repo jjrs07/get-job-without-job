@@ -4,24 +4,23 @@ This guide walks you through hosting a static HTML/CSS website using **Amazon S3
 
 ---
 
-## 🚀 Prerequisites
+## Prerequisites
 
-✅ AWS Free Tier Account  
-✅ Basic HTML/CSS files ready (e.g., `index.html`)  
-✅ [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html) (optional but helpful)  
-
----
-
-## 🛠️ Step-by-Step Instructions
-
-### ✅ Step 1: Log in to the AWS Management Console
-
-Go to: [https://console.aws.amazon.com](https://console.aws.amazon.com)  
-Log in using your **root user** or **IAM user** credentials.
+- AWS Free Tier Account  
+- [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html) (optional but helpful)  
 
 ---
 
-### 🪣 Step 2: Create an S3 Bucket
+## Step-by-Step Instructions
+
+### Step 1: Log in to the AWS Management Console
+
+Go to: [AWS Console](https://console.aws.amazon.com)  
+Log in using your **root user** or **IAM user** credentials (recommended).
+
+---
+
+### Step 2: Create an S3 Bucket
 
 1. Go to **S3** service.
 2. Click **"Create bucket"**.
@@ -32,7 +31,27 @@ Log in using your **root user** or **IAM user** credentials.
 
 ---
 
-### 📂 Step 3: Upload Website Files
+### Step 3: Create an index.hmtl file
+
+1. Open a notepad
+2. Copy the HTML Script below
+    ```html
+     <!DOCTYPE html>
+     <html>
+      <head>
+        <title>My Cloud Portfolio</title>
+      </head>
+      <body>
+        <h1>Hello from the Cloud!</h1>
+        <p>This is my first project deployed using AWS S3.</p>
+      </body>
+    </html>
+
+3. Save the file as **index.html**
+
+---
+
+### Step 4: Upload Website Files
 
 1. Click on your newly created bucket.
 2. Click **"Upload"** > **"Add files"**.
@@ -41,7 +60,7 @@ Log in using your **root user** or **IAM user** credentials.
 
 ---
 
-### 🌍 Step 4: Enable Static Website Hosting
+### Step 5: Enable Static Website Hosting
 
 1. In the bucket, go to **Properties** tab.
 2. Scroll to **"Static website hosting"** and click **Edit**.
@@ -54,7 +73,7 @@ Log in using your **root user** or **IAM user** credentials.
 
 ---
 
-### 🔓 Step 5: Make Files Public
+### Step 6: Make Files Public
 
 1. Go to the **Permissions** tab of your bucket.
 2. Scroll down to **Bucket policy**, click **Edit**.
