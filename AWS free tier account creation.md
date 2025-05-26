@@ -19,7 +19,7 @@ Before you begin, make sure you have:
 
 ### Step 1: Go to the AWS Free Tier Page
 
-- Visit: [https://aws.amazon.com/free]
+- Visit: [AWS](https://aws.amazon.com/free)
 
 Click on **“Create a Free Account”** button.
 
@@ -72,7 +72,7 @@ Select the **Basic Support Plan (Free)** and click **Complete Sign Up**.
 
 ### Step 7: Sign In to the AWS Console
 
-- Go to [https://console.aws.amazon.com]
+- Go to [AWS Console](https://console.aws.amazon.com)
 - Sign in using your **root user email and password**
 - Start exploring the **AWS Management Console**
 
@@ -103,7 +103,7 @@ Select the **Basic Support Plan (Free)** and click **Complete Sign Up**.
 Now that you have your AWS Free Tier account:
 
 - ✅ Start a hands-on project (e.g., deploy a static website on S3)
-- 🎓 Try AWS re/Start labs or tutorials
+- 🎓 Try AWS labs or tutorials
 - 💡 Explore IAM, EC2, RDS, and S3 as your foundation
 
 ---
@@ -117,4 +117,4 @@ After setup, enable **MFA (Multi-Factor Authentication)** for your root user:
 
 ## ✉️ Questions?
 
-Open an issue in this repo or reach out on [LinkedIn]https://www.linkedin.com/in/james-santos-18697713/.
+Open an issue in this repo or reach out to me on [LinkedIn](https://www.linkedin.com/in/james-santos-18697713/) or to my [Master Cloud Training FB Page](https://www.facebook.com/profile.php?id=100069262545216)
