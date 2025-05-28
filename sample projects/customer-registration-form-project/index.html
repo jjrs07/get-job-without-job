@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Personal Details Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      padding: 20px;
+    }
+    .form-container {
+      background-color: #fff;
+      padding: 25px;
+      border-radius: 10px;
+      max-width: 500px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    input[type="text"], input[type="email"], textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 8px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    input[type="submit"], button {
+      background-color: #0077cc;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-right: 10px;
+    }
+    input[type="submit"]:hover, button:hover {
+      background-color: #005fa3;
+    }
+    #confirmation {
+      margin-top: 20px;
+      color: green;
+      font-weight: bold;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>Enter Your Personal Details</h2>
+    <form id="personalForm">
+      <label for="fullname">Full Name:</label>
+      <input type="text" id="fullname" name="fullname" required>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="address">Address:</label>
+      <textarea id="address" name="address" rows="3" required></textarea>
+
+      <label for="phone">Phone Number:</label>
+      <input type="text" id="phone" name="phone" required>
+
+      <input type="submit" value="Submit">
+      <button type="button" onclick="resetForm()">Submit Another Entry</button>
+      <button type="button" onclick="exitApp()">Exit App</button>
+    </form>
+
+    <div id="confirmation">✅ Your data has been submitted successfully!</div>
+  </div>
+
+  <script>
+    const form = document.getElementById("personalForm");
+    const confirmation = document.getElementById("confirmation");
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault(); // prevent default form submission
+      const formData = new FormData(form);
+
+      fetch("http://<your-ec2-public-ip>:5000/submit", {
+        method: "POST",
+        body: formData,
+      })
+      .then(response => response.text())
+      .then(data => {
+        confirmation.style.display = "block";
+        confirmation.style.color = "green";
+        confirmation.innerText = "✅ Your data has been submitted successfully!";
+        form.reset();
+      })
+      .catch(error => {
+        confirmation.style.display = "block";
+        confirmation.style.color = "red";
+        confirmation.innerText = "❌ There was an error submitting your data.";
+        console.error("Error:", error);
+      });
+    });
+
+    function resetForm() {
+      form.reset();
+      confirmation.style.display = "none";
+    }
+
+    function exitApp() {
+      window.location.href = "https://www.google.com"; // or any custom URL
+    }
+  </script>
+
+</body>
+</html>
