@@ -22,16 +22,58 @@ This guide walks you through setting up a Flask app on an Amazon EC2 instance (A
 
 ---
 
-## 📝 Step 1: Upload `app.py` to S3
+
+---
+
+## 🗄️ Step 0: Create an Amazon RDS MySQL Database
+
+You can create an RDS MySQL instance using the AWS Console or CLI.
+
+### 📌 Option A: Create RDS via Console
+
+1. Go to the **RDS Console** → "Create database"
+2. Choose:
+   - Engine: **MySQL**
+   - Template: **Free tier**
+   - DB Instance Identifier: `cloud-form-db`
+   - Master username: `admin`
+   - Master password: your password
+3. Make it **publicly accessible** (for testing only)
+4. Place it in the **same VPC** as your EC2
+5. Configure the security group to allow **TCP port 3306** inbound from your EC2 security group
+6. Wait for the DB status to be **Available**
+
+### 📌 Option B: Create RDS via CLI
 
 1. On your AWS Console, open the cloudshell 
 2. Upload your 'app.py' in the cloudshell
-3. Create a bucket or choose an existing one.
 
 ```bash
-aws s3 mb s3://your-s3-bucket-name
+aws rds create-db-instance \
+  --db-instance-identifier cloud-form-db \
+  --db-instance-class db.t3.micro \
+  --engine mysql \
+  --allocated-storage 20 \
+  --master-username admin \
+  --master-user-password YourSecurePassword123 \
+  --vpc-security-group-ids sg-xxxxxxx \
+  --availability-zone us-east-1a \
+  --db-name cloud_form \
+  --publicly-accessible \
+  --backup-retention-period 0
 ```
-4. Upload your `app.py`
+
+📌 Make sure to replace:
+- `sg-xxxxxxx` with your security group ID
+- `us-east-1a` with your preferred AZ
+- Set your own `--master-user-password` securely
+
+🕒 After creation, find your DB endpoint and update `app.py` accordingly.
+
+## 📝 Step 1: Upload `app.py` to S3
+
+1. Create a bucket or choose an existing one.
+2. Upload your `app.py`:
 
 ```bash
 aws s3 cp app.py s3://your-s3-bucket-name/your-folder-path/app.py
